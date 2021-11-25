@@ -36,3 +36,63 @@ input {
 img {
 	max-width: 300px;
 }
+
+.infoSectionTitle{
+	color: orange;
+	margin-bottom: -10px;
+}
+
+.senadImage{
+	width: 200px;
+	margin-right: 15px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 9px darkgray;
+}
+
+
+
+#imagesContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+	margin-top: 30px;
+}
+#imagesContainer img{
+	opacity: 20%;
+}
+
+#imagesContainer img:hover{
+	animation-name: enlarge;
+	animation-duration: .3s;
+	opacity: 100%;
+	z-index: 10;
+}
+
+.favoriteBtns{
+	background-color: goldenrod;
+	padding: 20px;
+	border-radius: 10px;
+	border: 2px solid rgb(152, 118, 32);
+	cursor: pointer;
+}
+.favoriteBtns:hover{
+	background-color: rgb(186, 143, 35);
+
+}
+
+
+@keyframes enlarge {
+	from {
+		transform: scale(1);
+	  }
+	
+	  75% {
+		transform: scale(1.1);
+		/* transform: rotate(20deg); */
+	  }
+	
+	  to {
+		transform: scale(1);
+	  }
+}
