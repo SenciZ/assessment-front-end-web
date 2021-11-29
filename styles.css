@@ -2,7 +2,7 @@ body {
   background: #ddd;
   margin: 1rem;
   padding: 1rem;
-  max-width: 500px;
+  max-width: 550px;
   margin: 2rem auto;
   font-family: "Open Sans", sans-serif;
 }
@@ -81,7 +81,10 @@ img {
 
 }
 
+.checkList{
+	display: inline-block;
 
+}
 @keyframes enlarge {
 	from {
 		transform: scale(1);
